@@ -1,4 +1,5 @@
-FROM ilyasbit/ubuntufocal:october2022
+FROM ilyasbit/testchia:latest
 
+COPY docker-start.sh /usr/local/bin/
 
-CMD ["/bin/bash"]
+CMD ["docker-start.sh"]
